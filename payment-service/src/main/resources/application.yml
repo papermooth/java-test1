@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: payment-service
+
+dubbo:
+  application:
+    name: payment-service
+    qos-enable: false
+    logger: slf4j
+  protocol:
+    name: dubbo
+    port: 20883
+    threads: 200
+  registry:
+    address: zookeeper://localhost:2181
+    timeout: 60000
+    retry-times: 10
+    retry-interval: 15000
+    session: 120000
+  provider:
+    timeout: 30000
+    retries: 0
+    loadbalance: random
+  consumer:
+    timeout: 30000
+    retries: 3
+    check: false
+  threadpool: fixed
+  threads: 200

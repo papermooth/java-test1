@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: demo-webapp
+
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: demo-webapp
+    logger: slf4j
+  registry:
+    address: zookeeper://localhost:2181
+    timeout: 60000
+    retry-times: 10
+    retry-interval: 15000
+  protocol:
+    name: dubbo
+    port: -1
+  consumer:
+    timeout: 30000
+    retries: 3
+    check: false
+    lazy: true
+  provider:
+    timeout: 30000
+    retries: 0
+  scan:
+    base-packages: com.example.demo.controller
+  protocol-threads: 200
+  threadpool: fixed
+  threads: 200
+
+# SkyWalking配置
+skywalking:
+  agent:
+    service_name: demo-webapp

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: demo-provider
+
+server:
+  port: 20880
+
+dubbo:
+  application:
+    name: demo-provider
+    logger: slf4j
+  registry:
+    address: zookeeper://localhost:2181
+    timeout: 60000
+    retry-times: 10
+    retry-interval: 15000
+    session: 120000
+  protocol:
+    name: dubbo
+    port: 20880
+    threads: 200
+  provider:
+    timeout: 30000
+    retries: 0
+    loadbalance: random
+  consumer:
+    timeout: 30000
+    retries: 3
+    check: false
+  threadpool: fixed
+  threads: 200
+  scan:
+    base-packages: com.example.demo.service.impl
+
+# SkyWalking配置
+skywalking:
+  agent:
+    service_name: demo-provider

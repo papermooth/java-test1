@@ -1,0 +1,464 @@
+log4j:WARN No appenders could be found for logger (org.apache.dubbo.common.logger.LoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2025-10-23 11:17:58.503  INFO 24682 --- [           main] d.s.b.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v2.7.20) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.20) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2025-10-23 11:17:58.505  INFO 24682 --- [           main] e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.logger=slf4j, dubbo.application.name=payment-service, dubbo.application.qos-enable=false, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=3, dubbo.consumer.timeout=30000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20883, dubbo.protocol.threads=200, dubbo.provider.loadbalance=random, dubbo.provider.retries=0, dubbo.provider.timeout=30000, dubbo.registry.address=zookeeper://localhost:2181, dubbo.registry.retry-interval=15000, dubbo.registry.retry-times=10, dubbo.registry.session=120000, dubbo.registry.timeout=60000, dubbo.threadpool=fixed, dubbo.threads=200}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2025-10-23 11:17:58.570  INFO 24682 --- [           main] c.e.demo.PaymentServiceApplication       : Starting PaymentServiceApplication on 1 with PID 24682 (/root/test1/payment-service/target/payment-service-1.0-SNAPSHOT.jar started by root in /root/test1/payment-service/target)
+2025-10-23 11:17:58.571  INFO 24682 --- [           main] c.e.demo.PaymentServiceApplication       : No active profile set, falling back to default profiles: default
+2025-10-23 11:17:58.732  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+2025-10-23 11:17:58.733  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+2025-10-23 11:17:58.733  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboApplicationListenerRegistrar]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboApplicationListenerRegister] has been registered.
+2025-10-23 11:17:58.733  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+2025-10-23 11:17:58.734  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigEarlyRegistrationPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigEarlyRegistrationPostProcessor] has been registered.
+2025-10-23 11:17:58.762  INFO 24682 --- [           main] .b.f.a.ConfigurationBeanBindingRegistrar : The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2025-10-23 11:17:58.762  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+2025-10-23 11:17:58.763  INFO 24682 --- [           main] .b.f.a.ConfigurationBeanBindingRegistrar : The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2025-10-23 11:17:58.763  INFO 24682 --- [           main] .b.f.a.ConfigurationBeanBindingRegistrar : The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2025-10-23 11:17:58.763  INFO 24682 --- [           main] .b.f.a.ConfigurationBeanBindingRegistrar : The configuration bean definition [name : org.apache.dubbo.config.ProviderConfig#0, content : Root bean: class [org.apache.dubbo.config.ProviderConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2025-10-23 11:17:58.763  INFO 24682 --- [           main] .b.f.a.ConfigurationBeanBindingRegistrar : The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2025-10-23 11:17:58.767  INFO 24682 --- [           main] ubboConfigEarlyRegistrationPostProcessor : DubboConfigEarlyInitializationPostProcessor has bean registered
+2025-10-23 11:17:58.801  INFO 24682 --- [           main] com.alibaba.spring.util.BeanRegistrar    : The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2025-10-23 11:17:58.808  INFO 24682 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2025-10-23 11:17:58.975  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:58.977  INFO 24682 --- [           main] .a.ConfigurationBeanBindingPostProcessor : The configuration bean [<dubbo:application name="payment-service" logger="slf4j" qosEnable="false" hostname="1" />] have been binding by the configuration properties [{name=payment-service, qos-enable=false, logger=slf4j}]
+2025-10-23 11:17:58.987  INFO 24682 --- [           main] .a.ConfigurationBeanBindingPostProcessor : The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{timeout=30000, retries=3, check=false}]
+2025-10-23 11:17:58.993  INFO 24682 --- [           main] .a.ConfigurationBeanBindingPostProcessor : The configuration bean [<dubbo:registry address="zookeeper://localhost:2181" port="2181" protocol="zookeeper" timeout="60000" session="120000" />] have been binding by the configuration properties [{address=zookeeper://localhost:2181, timeout=60000, retry-times=10, retry-interval=15000, session=120000}]
+2025-10-23 11:17:58.996  INFO 24682 --- [           main] .a.ConfigurationBeanBindingPostProcessor : The configuration bean [ProtocolConfig{name='dubbo', host='null', port=20883, contextpath='null', threadpool='null', threadname='null', corethreads=null, threads=200, iothreads=null, alive=null, queues=null, accepts=null, codec='null', serialization='null', charset='null', payload=null, buffer=null, heartbeat=null, accesslog='null', transporter='null', exchanger='null', dispatcher='null', networker='null', server='null', client='null', telnet='null', prompt='null', status='null', register=null, keepAlive=null, optimizer='null', extension='null', parameters=null, isDefault=null, sslEnabled=null}] have been binding by the configuration properties [{name=dubbo, port=20883, threads=200}]
+2025-10-23 11:17:59.003  INFO 24682 --- [           main] .a.ConfigurationBeanBindingPostProcessor : The configuration bean [ProviderConfig{host='null', port=null, contextpath='null', threadpool='null', threadname='null', threads=null, iothreads=null, alive=null, queues=null, accepts=null, codec='null', charset='null', payload=null, buffer=null, transporter='null', exchanger='null', dispatcher='null', networker='null', server='null', client='null', telnet='null', prompt='null', status='null', wait=null', isDefault=null}] have been binding by the configuration properties [{timeout=30000, retries=0, loadbalance=random}]
+2025-10-23 11:17:59.003  INFO 24682 --- [           main] o.a.d.c.s.b.f.a.ReferenceBeanBuilder     : The configBean[type:ReferenceBean] has been built.
+2025-10-23 11:17:59.008  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] No value is configured in the registry, the DynamicConfigurationFactory extension[name : zookeeper] supports as the config center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.008  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] The registry[<dubbo:registry address="zookeeper://localhost:2181" port="2181" protocol="zookeeper" timeout="60000" session="120000" />] will be used as the config center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:zookeeper.version=3.5.7-f0fdd52973d373ffd9c86b81d99842dc2c7f660e, built on 02/10/2020 11:30 GMT
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:host.name=0.0.0.1
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.version=17.0.16
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.vendor=Red Hat, Inc.
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.home=/usr/lib/jvm/java-17-openjdk-17.0.16.0.8-2.el9.x86_64
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.class.path=payment-service-1.0-SNAPSHOT.jar
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.io.tmpdir=/tmp
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:java.compiler=<NA>
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.name=Linux
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.arch=amd64
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.version=5.14.0-503.14.1.el9_5.x86_64
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:user.name=root
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:user.home=/root
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:user.dir=/root/test1/payment-service/target
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.free=43MB
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.max=1410MB
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Client environment:os.memory.total=92MB
+2025-10-23 11:17:59.042  INFO 24682 --- [           main] org.apache.curator.utils.Compatibility   : Using emulated InjectSessionExpiration
+2025-10-23 11:17:59.061  INFO 24682 --- [           main] o.a.c.f.imps.CuratorFrameworkImpl        : Starting
+2025-10-23 11:17:59.063  INFO 24682 --- [           main] org.apache.zookeeper.ZooKeeper           : Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@27508c5d
+2025-10-23 11:17:59.065  INFO 24682 --- [           main] org.apache.zookeeper.common.X509Util     : Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2025-10-23 11:17:59.068  INFO 24682 --- [           main] org.apache.zookeeper.ClientCnxnSocket    : jute.maxbuffer value is 4194304 Bytes
+2025-10-23 11:17:59.071  INFO 24682 --- [           main] org.apache.zookeeper.ClientCnxn          : zookeeper.request.timeout value is 0. feature enabled=
+2025-10-23 11:17:59.073  INFO 24682 --- [localhost:2181)] org.apache.zookeeper.ClientCnxn          : Opening socket connection to server localhost/[0:0:0:0:0:0:0:1]:2181. Will not attempt to authenticate using SASL (unknown error)
+2025-10-23 11:17:59.081  INFO 24682 --- [localhost:2181)] org.apache.zookeeper.ClientCnxn          : Socket connection established, initiating session, client: /[0:0:0:0:0:0:0:1]:43646, server: localhost/[0:0:0:0:0:0:0:1]:2181
+2025-10-23 11:17:59.081  INFO 24682 --- [           main] o.a.c.f.imps.CuratorFrameworkImpl        : Default schema
+2025-10-23 11:17:59.084  INFO 24682 --- [localhost:2181)] org.apache.zookeeper.ClientCnxn          : Session establishment complete on server localhost/[0:0:0:0:0:0:0:1]:2181, sessionid = 0x100005b5d230002, negotiated timeout = 40000
+2025-10-23 11:17:59.086  INFO 24682 --- [ain-EventThread] o.a.c.f.state.ConnectionStateManager     : State change: CONNECTED
+2025-10-23 11:17:59.088  INFO 24682 --- [nStateManager-0] o.a.d.r.z.c.CuratorZookeeperClient       :  [DUBBO] Curator zookeeper client instance initiated successfully, session id is 100005b5d230002, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.089  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperTransporter   :  [DUBBO] No valid zookeeper client found from cache, therefore create a new client for url. zookeeper://localhost:2181/ConfigCenterConfig?check=true&config-file=dubbo.properties&group=dubbo&highest-priority=false&timeout=60000, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.090  INFO 24682 --- [ain-EventThread] o.a.c.framework.imps.EnsembleTracker     : New config event received: {}
+2025-10-23 11:17:59.091  INFO 24682 --- [ain-EventThread] o.a.c.framework.imps.EnsembleTracker     : New config event received: {}
+2025-10-23 11:17:59.099  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.101  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] No global configuration in config center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.101  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] No application level configuration in config center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.102  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.109  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.111  INFO 24682 --- [           main] o.a.d.c.utils.ConfigValidationUtils      :  [DUBBO] No valid monitor config found, specify monitor info to enable collection of Dubbo statistics, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.116  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] No value is configured in the registry, the MetadataReportFactory extension[name : zookeeper] supports as the metadata center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.116  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] The registry[<dubbo:registry address="zookeeper://localhost:2181" port="2181" protocol="zookeeper" timeout="60000" session="120000" />] will be used as the metadata center, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.117  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.128  INFO 24682 --- [           main] o.a.d.m.s.z.ZookeeperMetadataReport      :  [DUBBO] Load service store file /root/.dubbo/dubbo-metadata-payment-service-localhost-2181.cache, data: {com.example.demo.service.OrderService:::consumer:payment-service={"init":"false","side":"consumer","metadata-type":"remote","application":"payment-service","release":"2.7.20","methods":"createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus","sticky":"false","dubbo":"2.0.2","interface":"com.example.demo.service.OrderService","qos.enable":"false"}, com.example.demo.service.PaymentService:::provider:payment-service={"annotations":[],"canonicalName":"com.example.demo.service.PaymentService","codeSource":"jar:file:/root/4.0/payment-service/target/payment-service-1.0-SNAPSHOT.jar!/BOOT-INF/lib/payment-api-1.0-SNAPSHOT.jar!/","methods":[{"annotations":[],"name":"getPaymentStatus","parameterTypes":["java.lang.String"],"parameters":[],"returnType":"java.util.Map<java.lang.String,java.lang.Object>"},{"annotations":[],"name":"createPayment","parameterTypes":["java.lang.String","java.lang.String","double","java.lang.String"],"parameters":[],"returnType":"java.util.Map<java.lang.String,java.lang.Object>"},{"annotations":[],"name":"handlePaymentCallback","parameterTypes":["java.lang.String","java.lang.String","java.util.Map<java.lang.String,java.lang.Object>"],"parameters":[],"returnType":"boolean"},{"annotations":[],"name":"refund","parameterTypes":["java.lang.String","double","java.lang.String"],"parameters":[],"returnType":"java.util.Map<java.lang.String,java.lang.Object>"},{"annotations":[],"name":"getUserPaymentHistory","parameterTypes":["java.lang.String"],"parameters":[],"returnType":"java.util.List<java.util.Map<java.lang.String,java.lang.Object>>"},{"annotations":[],"name":"validatePayment","parameterTypes":["java.lang.String","java.lang.String"],"parameters":[],"returnType":"boolean"}],"parameters":{"side":"provider","service.name":"ServiceBean:/com.example.demo.service.PaymentService","release":"2.7.20","methods":"getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund","deprecated":"false","dubbo":"2.0.2","interface":"com.example.demo.service.PaymentService","qos.enable":"false","generic":"false","metadata-type":"remote","application":"payment-service","dynamic":"true","anyhost":"true"},"types":[{"enums":[],"items":[],"properties":{},"type":"java.lang.Object","typeBuilderName":"org.apache.dubbo.metadata.definition.builder.DefaultTypeBuilder"},{"enums":[],"items":[],"properties":{},"type":"boolean","typeBuilderName":"org.apache.dubbo.metadata.definition.builder.DefaultTypeBuilder"},{"enums":[],"items":[],"properties":{},"type":"double","typeBuilderName":"org.apache.dubbo.metadata.definition.builder.DefaultTypeBuilder"},{"enums":[],"items":[],"properties":{},"type":"java.lang.String","typeBuilderName":"org.apache.dubbo.metadata.definition.builder.DefaultTypeBuilder"}],"uniqueId":"com.example.demo.service.PaymentService@jar:file:/root/4.0/payment-service/target/payment-service-1.0-SNAPSHOT.jar!/BOOT-INF/lib/payment-api-1.0-SNAPSHOT.jar!/"}}, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.139  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperTransporter   :  [DUBBO] find valid zookeeper client from the cache for address: zookeeper://localhost:2181/org.apache.dubbo.metadata.report.MetadataReport?application=payment-service&client=&port=2181&protocol=zookeeper&registry=org.apache.dubbo.config.RegistryConfig#0&timeout=60000, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.141  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] DubboBootstrap has been initialized!, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.178  INFO 24682 --- [           main] o.a.d.qos.protocol.QosProtocolWrapper    :  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.180  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Load registry cache file /root/.dubbo/dubbo-registry-payment-service-localhost-2181.cache, data: {com.example.demo.service.PaymentService=empty://172.18.0.1:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=172.18.0.1&bind.port=20883&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=347493&qos.enable=false&release=2.7.20&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&timestamp=1760858770926, com.example.demo.service.OrderService=empty://172.18.0.1/com.example.demo.service.OrderService?application=payment-service&category=routers&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=347493&qos.enable=false&release=2.7.20&side=consumer&sticky=false&timestamp=1760858769675 empty://172.18.0.1/com.example.demo.service.OrderService?application=payment-service&category=configurators&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=347493&qos.enable=false&release=2.7.20&side=consumer&sticky=false&timestamp=1760858769675 dubbo://172.18.0.1:20882/com.example.demo.service.OrderService?anyhost=true&application=order-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.OrderService&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=347348&release=2.7.20&service.name=ServiceBean:/com.example.demo.service.OrderService&side=provider&timestamp=1760858768702}, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.180  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperTransporter   :  [DUBBO] find valid zookeeper client from the cache for address: zookeeper://localhost:2181/org.apache.dubbo.registry.RegistryService?application=payment-service&dubbo=2.0.2&id=org.apache.dubbo.config.RegistryConfig#0&interface=org.apache.dubbo.registry.RegistryService&logger=slf4j&pid=24682&qos.enable=false&release=2.7.20&session=120000&timeout=60000&timestamp=1761189479162, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.183  INFO 24682 --- [           main] o.a.d.r.c.m.MigrationRuleListener        :  [DUBBO] Listening for migration rules on dataId-payment-service.migration group-MIGRATION, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.185  INFO 24682 --- [           main] o.a.d.r.c.m.MigrationRuleListener        :  [DUBBO] Using the following migration rule to migrate:, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.185  INFO 24682 --- [           main] o.a.d.r.c.m.MigrationRuleListener        :  [DUBBO] INIT, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.195  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Register: consumer://192.168.107.75/com.example.demo.service.OrderService?application=payment-service&category=consumers&check=false&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&release=2.7.20&retries=3&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.205  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Subscribe: consumer://192.168.107.75/com.example.demo.service.OrderService?application=payment-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&release=2.7.20&retries=3&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.216  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Notify urls for subscribe url consumer://192.168.107.75/com.example.demo.service.OrderService?application=payment-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&release=2.7.20&retries=3&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145, urls: [dubbo://192.168.107.75:20882/com.example.demo.service.OrderService?anyhost=true&application=order-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.OrderService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=createOrder,cancelOrder,getOrderById,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24601&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.OrderService&side=provider&threads=200&timeout=30000&timestamp=1761189477493, empty://192.168.107.75/com.example.demo.service.OrderService?application=payment-service&category=configurators&check=false&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&release=2.7.20&retries=3&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145, empty://192.168.107.75/com.example.demo.service.OrderService?application=payment-service&category=routers&check=false&dubbo=2.0.2&init=false&interface=com.example.demo.service.OrderService&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&release=2.7.20&retries=3&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145], dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.338  INFO 24682 --- [lientWorker-1-1] o.a.d.r.t.netty4.NettyClientHandler      :  [DUBBO] The connection of /192.168.107.75:55146 -> /192.168.107.75:20882 is established., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.341  INFO 24682 --- [           main] o.a.d.remoting.transport.AbstractClient  :  [DUBBO] Successed connect to server /192.168.107.75:20882 from NettyClient 192.168.107.75 using dubbo version 2.7.20, channel is NettyChannel [channel=[id: 0x194c8a9c, L:/192.168.107.75:55146 - R:/192.168.107.75:20882]], dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.341  INFO 24682 --- [           main] o.a.d.remoting.transport.AbstractClient  :  [DUBBO] Start NettyClient /192.168.107.75 connect to the server /192.168.107.75:20882, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.358  INFO 24682 --- [           main] org.apache.dubbo.config.ReferenceConfig  :  [DUBBO] Refer dubbo service com.example.demo.service.OrderService from url dubbo://192.168.107.75/com.example.demo.service.OrderService?anyhost=true&application=payment-service&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=com.example.demo.service.OrderService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus&pid=24682&qos.enable=false&register.ip=192.168.107.75&release=2.7.20&remote.application=order-service&retries=3&service.name=ServiceBean:/com.example.demo.service.OrderService&side=consumer&sticky=false&timeout=30000&timestamp=1761189479145, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.405  INFO 24682 --- [Report-thread-1] o.a.d.m.s.z.ZookeeperMetadataReport      :  [DUBBO] store consumer metadata. Identifier : org.apache.dubbo.metadata.report.identifier.MetadataIdentifier@50a03c9e; definition: {init=false, side=consumer, release=2.7.20, methods=createOrder,getOrderById,cancelOrder,getUserOrders,getOrderStatistics,updateOrderStatus, logger=slf4j, dubbo=2.0.2, check=false, interface=com.example.demo.service.OrderService, qos.enable=false, timeout=30000, retries=3, metadata-type=remote, application=payment-service, sticky=false}, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.441  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.496  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] DubboBootstrap is starting..., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.505  INFO 24682 --- [           main] org.apache.dubbo.config.ServiceConfig    :  [DUBBO] No valid ip found from environment, try to get local host., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.510  INFO 24682 --- [           main] org.apache.dubbo.config.ServiceConfig    :  [DUBBO] Export dubbo service com.example.demo.service.PaymentService to local registry url : injvm://127.0.0.1/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=192.168.107.75&bind.port=20883&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&qos.enable=false&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.510  INFO 24682 --- [           main] org.apache.dubbo.config.ServiceConfig    :  [DUBBO] Register dubbo service com.example.demo.service.PaymentService url dubbo://192.168.107.75:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=192.168.107.75&bind.port=20883&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&qos.enable=false&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501 to registry registry://localhost:2181/org.apache.dubbo.registry.RegistryService?application=payment-service&dubbo=2.0.2&id=org.apache.dubbo.config.RegistryConfig#0&logger=slf4j&pid=24682&qos.enable=false&registry=zookeeper&release=2.7.20&session=120000&timeout=60000&timestamp=1761189479501, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.519  INFO 24682 --- [           main] o.a.d.remoting.transport.AbstractServer  :  [DUBBO] Start NettyServer bind /0.0.0.0:20883, export /192.168.107.75:20883, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.520  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Register: dubbo://192.168.107.75:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.525  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Subscribe: provider://192.168.107.75:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=192.168.107.75&bind.port=20883&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&qos.enable=false&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501, dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.527  INFO 24682 --- [           main] o.a.d.r.zookeeper.ZookeeperRegistry      :  [DUBBO] Notify urls for subscribe url provider://192.168.107.75:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=192.168.107.75&bind.port=20883&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&qos.enable=false&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501, urls: [empty://192.168.107.75:20883/com.example.demo.service.PaymentService?anyhost=true&application=payment-service&bind.ip=192.168.107.75&bind.port=20883&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.example.demo.service.PaymentService&loadbalance=random&logger=slf4j&metadata-type=remote&methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund&pid=24682&qos.enable=false&release=2.7.20&retries=0&service.name=ServiceBean:/com.example.demo.service.PaymentService&side=provider&threads=200&timeout=30000&timestamp=1761189479501], dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.529  INFO 24682 --- [Report-thread-1] o.a.d.m.s.z.ZookeeperMetadataReport      :  [DUBBO] store provider metadata. Identifier : org.apache.dubbo.metadata.report.identifier.MetadataIdentifier@43798422; definition: FullServiceDefinition{parameters={side=provider, service.name=ServiceBean:/com.example.demo.service.PaymentService, release=2.7.20, methods=getPaymentStatus,validatePayment,getUserPaymentHistory,createPayment,handlePaymentCallback,refund, logger=slf4j, deprecated=false, dubbo=2.0.2, loadbalance=random, threads=200, interface=com.example.demo.service.PaymentService, qos.enable=false, timeout=30000, generic=false, retries=0, metadata-type=remote, application=payment-service, dynamic=true, anyhost=true}} ServiceDefinition [canonicalName=com.example.demo.service.PaymentService, codeSource=jar:file:/root/test1/payment-service/target/payment-service-1.0-SNAPSHOT.jar!/BOOT-INF/lib/payment-api-1.0-SNAPSHOT.jar!/, methods=[MethodDefinition [name=getPaymentStatus, parameterTypes=[java.lang.String], returnType=java.util.Map<java.lang.String,java.lang.Object>], MethodDefinition [name=createPayment, parameterTypes=[java.lang.String, java.lang.String, double, java.lang.String], returnType=java.util.Map<java.lang.String,java.lang.Object>], MethodDefinition [name=handlePaymentCallback, parameterTypes=[java.lang.String, java.lang.String, java.util.Map<java.lang.String,java.lang.Object>], returnType=boolean], MethodDefinition [name=refund, parameterTypes=[java.lang.String, double, java.lang.String], returnType=java.util.Map<java.lang.String,java.lang.Object>], MethodDefinition [name=getUserPaymentHistory, parameterTypes=[java.lang.String], returnType=java.util.List<java.util.Map<java.lang.String,java.lang.Object>>], MethodDefinition [name=validatePayment, parameterTypes=[java.lang.String, java.lang.String], returnType=boolean]]], dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.529  INFO 24682 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2025-10-23 11:17:59.534  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] DubboBootstrap is ready., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.535  INFO 24682 --- [           main] o.a.d.config.bootstrap.DubboBootstrap    :  [DUBBO] DubboBootstrap has started., dubbo version: 2.7.20, current host: 192.168.107.75
+2025-10-23 11:17:59.537  INFO 24682 --- [           main] c.e.demo.PaymentServiceApplication       : Started PaymentServiceApplication in 1.254 seconds (JVM running for 1.499)
+2025-10-23 11:17:59.540  INFO 24682 --- [pool-1-thread-1] .b.c.e.AwaitingNonWebApplicationListener :  [Dubbo] Current Spring Boot Application is await...
+2025-10-23 11:18:01.504  INFO 24682 --- [erverWorker-4-1] o.a.d.r.t.netty4.NettyServerHandler      :  [DUBBO] The connection of /192.168.107.75:34404 -> /192.168.107.75:20883 is established., dubbo version: 2.7.20, current host: 192.168.107.75
+java.lang.reflect.InaccessibleObjectException: Unable to make field final int java.math.BigInteger.signum accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.reflect.InaccessibleObjectException: Unable to make field final int[] java.math.BigInteger.mag accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.reflect.InaccessibleObjectException: Unable to make field private int java.math.BigInteger.bitCountPlusOne accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.reflect.InaccessibleObjectException: Unable to make field private int java.math.BigInteger.bitLengthPlusOne accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.reflect.InaccessibleObjectException: Unable to make field private int java.math.BigInteger.lowestSetBitPlusTwo accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.reflect.InaccessibleObjectException: Unable to make field private int java.math.BigInteger.firstNonzeroIntNumPlusTwo accessible: module java.base does not "opens java.math" to unnamed module @de0a01f
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.getFieldMap(JavaDeserializer.java:340)
+	at com.alibaba.com.caucho.hessian.io.JavaDeserializer.<init>(JavaDeserializer.java:80)
+	at com.alibaba.com.caucho.hessian.io.BigIntegerDeserializer.<init>(BigIntegerDeserializer.java:25)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.<clinit>(SerializerFactory.java:142)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.DefaultHessian2FactoryInitializer.createSerializerFactory(DefaultHessian2FactoryInitializer.java:26)
+	at org.apache.dubbo.common.serialize.hessian2.dubbo.AbstractHessian2FactoryInitializer.getSerializerFactory(AbstractHessian2FactoryInitializer.java:30)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.<init>(Hessian2ObjectOutput.java:37)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2Serialization.serialize(Hessian2Serialization.java:51)
+	at org.apache.dubbo.remoting.transport.CodecSupport.lambda$getNullBytesOf$1(CodecSupport.java:112)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.apache.dubbo.remoting.transport.CodecSupport.getNullBytesOf(CodecSupport.java:107)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:253)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:71)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:40)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:69)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.handler.timeout.IdleStateHandler.write(IdleStateHandler.java:304)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:115)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.write(NettyClientHandler.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:764)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:790)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:758)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:808)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025)
+	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:294)
+	at org.apache.dubbo.remoting.transport.netty4.NettyChannel.send(NettyChannel.java:162)
+	at org.apache.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:53)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientHandler.userEventTriggered(NettyClientHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
+	at io.netty.handler.timeout.IdleStateHandler.channelIdle(IdleStateHandler.java:371)
+	at io.netty.handler.timeout.IdleStateHandler$ReaderIdleTimeoutTask.run(IdleStateHandler.java:504)
+	at io.netty.handler.timeout.IdleStateHandler$AbstractIdleTask.run(IdleStateHandler.java:476)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-10-23 11:26:58.036  INFO 24682 --- [erverWorker-4-2] o.a.d.r.t.netty4.NettyServerHandler      :  [DUBBO] The connection of /192.168.107.75:60940 -> /192.168.107.75:20883 is established., dubbo version: 2.7.20, current host: 192.168.107.75
+Payment created: PAY_f1c1d8b0 for order: ORDER_e7df2c49
+Payment created: PAY_22037967 for order: ORDER_76d805ec
